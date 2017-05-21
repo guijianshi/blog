@@ -139,7 +139,14 @@ return [
     ],
 
     // 视图输出字符串内容替换
-    'view_replace_str'       => [],
+    'view_replace_str'       => [
+        '__root__' => '/',
+        '__public__' => dirname($_SERVER['SCRIPT_NAME']).'/public',
+        '__js__' => './public/home/js/',
+        '__css__' => './public/home/css/',
+        '__static__' => './public/static/',
+        '__img__' => './public/home/img/',
+    ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
     'dispatch_error_tmpl'    => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css" rel="stylesheet">
+    <link href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css" rel="stylesheet">
+    <link rel="stylesheet" href="./home/css/base.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.js"></script>
+    <title>鬼剑士图片</title>
+</head>
+<body>
+
+<div class="container">
+    <ul class="nav nav-pills nav-justified">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">热门美女</a></li>
+        <li><a href="#">最新美女美女</a></li>
+        <li><a href="#">性感美女</a></li>
+
+        <li><a href="#">清纯美眉</a></li>
+        <li><a href="#">美女校花</a></li>
+
+        <li><a href="#">性感车模</a></li>
+        <li><a href="#">明星写真</a></li>
+    </ul>
+</div>
+<div class="container">
+    <div class="row img-detail text-center">
+        {volist name="data" id="image"}
+        <div class="col-md-12">
+            <img src="{$image.src}" />
+        </div>
+        {/volist}
+    </div>
+</div>
+
+</body>
+</html>
